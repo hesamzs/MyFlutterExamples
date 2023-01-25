@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'Teaching-Examples/diffrent-column-row.dart';
+import 'front-page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,25 +10,21 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(scaffoldBackgroundColor: Colors.grey[400]),
+      theme: ThemeData(scaffoldBackgroundColor: Colors.grey[600],
+      appBarTheme: AppBarTheme(
+        backgroundColor: Colors.grey[850]
+      )),
       debugShowCheckedModeBanner: false,
       home: const MyHomePage(),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
+class MyHomePage extends StatelessWidget {
   const MyHomePage({Key? key}) : super(key: key);
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
 
-class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-
-    return const Scaffold(
-      body: DiffrentColumnAndRow()
-    );
+    return const FrontPage();
   }
 }

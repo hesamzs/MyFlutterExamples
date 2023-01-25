@@ -55,28 +55,30 @@ class _DiffrentColumnAndRow extends State<DiffrentColumnAndRow> {
                 height: 45,
                 child: Row(
                   children: [
-                    Container(
-                      width: 183,
-                      color: Colors.grey,
-                      child: IconButton(
-                        icon: const Icon(Icons.exposure_minus_1),
-                        onPressed: () {
-                          setState(() {
-                            columns = columns - 1;
-                          });
-                        },
+                    Expanded(
+                      child: Container(
+                        color: Colors.grey,
+                        child: IconButton(
+                          icon: const Icon(Icons.exposure_minus_1),
+                          onPressed: () {
+                            setState(() {
+                              columns = columns - 1;
+                            });
+                          },
+                        ),
                       ),
                     ),
-                    Container(
-                      width: 183,
-                      color: Colors.grey,
-                      child: IconButton(
-                        icon: const Icon(Icons.plus_one),
-                        onPressed: () {
-                          setState(() {
-                            columns = columns + 1;
-                          });
-                        },
+                    Expanded(
+                      child: Container(
+                        color: Colors.grey,
+                        child: IconButton(
+                          icon: const Icon(Icons.plus_one),
+                          onPressed: () {
+                            setState(() {
+                              columns = columns + 1;
+                            });
+                          },
+                        ),
                       ),
                     ),
                   ],
@@ -118,28 +120,30 @@ class _DiffrentColumnAndRow extends State<DiffrentColumnAndRow> {
                   height: 50,
                   child: Row(
                     children: [
-                      Container(
-                        width: 183,
-                        color: Colors.grey,
-                        child: IconButton(
-                          icon: const Icon(Icons.exposure_minus_1),
-                          onPressed: () {
-                            setState(() {
-                              rows = rows - 1;
-                            });
-                          },
+                      Expanded(
+                        child: Container(
+                          color: Colors.grey,
+                          child: IconButton(
+                            icon: const Icon(Icons.exposure_minus_1),
+                            onPressed: () {
+                              setState(() {
+                                rows = rows - 1;
+                              });
+                            },
+                          ),
                         ),
                       ),
-                      Container(
-                        width: 183,
-                        color: Colors.grey,
-                        child: IconButton(
-                          icon: const Icon(Icons.plus_one),
-                          onPressed: () {
-                            setState(() {
-                              rows = rows + 1;
-                            });
-                          },
+                      Expanded(
+                        child: Container(
+                          color: Colors.grey,
+                          child: IconButton(
+                            icon: const Icon(Icons.plus_one),
+                            onPressed: () {
+                              setState(() {
+                                rows = rows + 1;
+                              });
+                            },
+                          ),
                         ),
                       ),
                     ],
@@ -151,6 +155,5 @@ class _DiffrentColumnAndRow extends State<DiffrentColumnAndRow> {
           ),
         ),
       );
-
   }
 }

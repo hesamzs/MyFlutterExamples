@@ -15,17 +15,9 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.grey[850]
       )),
       debugShowCheckedModeBanner: false,
-      home: const MyHomePage(),
+      home: const FrontPage(),
 
     );
   }
 }
 
-class MyHomePage extends StatelessWidget {
-  const MyHomePage({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return const FrontPage();
-  }
-}

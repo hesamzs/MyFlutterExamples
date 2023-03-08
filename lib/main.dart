@@ -1,5 +1,10 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
+import 'package:myflutterproject/Teaching-Examples/api/coinmarketcap/api.dart';
+import 'Teaching-Examples/api/coinmarketcap/coinmarketcap_api.dart';
 import 'front-page.dart';
+import 'package:http/http.dart' as http;
 
 void main() {
   runApp(const MyApp());
@@ -15,7 +20,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.grey[850]
       )),
       debugShowCheckedModeBanner: false,
-      home: const FrontPage(),
+      home: FrontPage(),
 
     );
   }

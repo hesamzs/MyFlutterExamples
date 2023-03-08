@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:myflutterproject/Teaching-Examples/diffrent-column-row.dart';
 
 import 'Teaching-Examples/Contact-Project/contact-list.dart';
+import 'Teaching-Examples/api/coinmarketcap/coinmarketcap_api.dart';
 import 'Teaching-Examples/drawer-page.dart';
+import 'Teaching-Examples/TextField.dart';
 
 class CustomPageBuilder extends StatelessWidget {
   const CustomPageBuilder(
@@ -122,6 +124,18 @@ class ListItems {
       'title' : "Drawer" ,
       'desc' : "Create AppBar Drawer",
       'func' : DrawerPage()
+    },
+    {
+      "id" : 4,
+      'title' : "TextField" ,
+      'desc' : "TextField with addListner Event",
+      'func' : TextFieldPage()
+    },
+    {
+      "id" : 5,
+      'title' : "Api" ,
+      'desc' : "Use CoinMarketCap Api ",
+      'func' : CoinMarketCapApi()
     },
   ];
 }
